@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ard_UNO)(type KiCad)(uri ${KIPRJMOD}/ard_UNO.pretty)(options "")(descr ""))
+)

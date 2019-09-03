@@ -1,0 +1,8 @@
+(module ard_UNO (layer F.Cu) (tedit 5D6C83A0)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value ard_UNO (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
