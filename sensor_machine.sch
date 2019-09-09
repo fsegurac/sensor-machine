@@ -129,7 +129,7 @@ L Device:R R2
 U 1 1 5C808522
 P 4750 4000
 F 0 "R2" H 4820 4046 50  0000 L CNN
-F 1 "120" H 4820 3955 50  0000 L CNN
+F 1 "1200" H 4820 3955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 4000 50  0001 C CNN
 F 3 "~" H 4750 4000 50  0001 C CNN
 	1    4750 4000
@@ -150,17 +150,6 @@ Wire Wire Line
 Connection ~ 5150 3200
 Wire Wire Line
 	5150 3200 5250 3200
-$Comp
-L power:+9V #PWR011
-U 1 1 5C808D41
-P 5400 3200
-F 0 "#PWR011" H 5400 3050 50  0001 C CNN
-F 1 "+9V" H 5415 3373 50  0000 C CNN
-F 2 "" H 5400 3200 50  0001 C CNN
-F 3 "" H 5400 3200 50  0001 C CNN
-	1    5400 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 3200 5900 3200
 $Comp
@@ -235,16 +224,16 @@ $EndComp
 $Comp
 L Diode:1N4001 D3
 U 1 1 5D4C4754
-P 5100 2300
-F 0 "D3" H 5100 2084 50  0000 C CNN
-F 1 "1N4001" H 5100 2175 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5100 2125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5100 2300 50  0001 C CNN
-	1    5100 2300
+P 4800 2300
+F 0 "D3" H 4800 2084 50  0000 C CNN
+F 1 "1N4001" H 4800 2175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4800 2125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4800 2300 50  0001 C CNN
+	1    4800 2300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4950 2300 4000 2300
+	4650 2300 4000 2300
 $Comp
 L Device:R R3
 U 1 1 5D4CCFFE
@@ -317,8 +306,6 @@ Wire Wire Line
 	4000 2750 4000 3200
 Wire Wire Line
 	4300 3550 4300 3650
-Wire Wire Line
-	6450 3200 6300 3200
 $Comp
 L power:GND #PWR0101
 U 1 1 5D6930DA
@@ -356,8 +343,6 @@ Text Label 6050 5050 0    50   ~ 0
 A3
 Wire Wire Line
 	7650 3850 7500 3850
-Text Label 7500 3850 2    50   ~ 0
-A5
 Wire Wire Line
 	7650 3650 7500 3650
 Text Label 7500 3650 2    50   ~ 0
@@ -370,8 +355,6 @@ Text Label 8700 3250 0    50   ~ 0
 D6
 Text Label 8700 3450 0    50   ~ 0
 D4
-Wire Wire Line
-	5400 2300 5250 2300
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 5D6D35B5
@@ -407,8 +390,6 @@ F 3 "~" H 7900 4700 50  0001 C CNN
 	1    7900 4700
 	1    0    0    -1  
 $EndComp
-Text Label 7550 4700 0    50   ~ 0
-A5
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5D6E6C05
@@ -559,7 +540,6 @@ NoConn ~ 7650 2500
 NoConn ~ 7650 2600
 NoConn ~ 7650 2700
 NoConn ~ 7650 2800
-NoConn ~ 7650 2900
 NoConn ~ 7650 3350
 NoConn ~ 7650 3450
 NoConn ~ 7650 3550
@@ -603,5 +583,46 @@ F 2 "" H 6450 3400 50  0001 C CNN
 F 3 "" H 6450 3400 50  0001 C CNN
 	1    6450 3400
 	1    0    0    -1  
+$EndComp
+Text Label 5300 2300 0    50   ~ 0
+5v
+Text Label 7650 2900 0    50   ~ 0
+5v
+Wire Wire Line
+	5400 2300 5300 2300
+Wire Wire Line
+	6300 3200 6450 3200
+$Comp
+L power:+7.5V #PWR0111
+U 1 1 5D707C72
+P 5400 3200
+F 0 "#PWR0111" H 5400 3050 50  0001 C CNN
+F 1 "+7.5V" H 5415 3373 50  0000 C CNN
+F 2 "" H 5400 3200 50  0001 C CNN
+F 3 "" H 5400 3200 50  0001 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J9
+U 1 1 5D75DCB4
+P 7350 4700
+F 0 "J9" H 7270 4475 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 7270 4566 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 7350 4700 50  0001 C CNN
+F 3 "~" H 7350 4700 50  0001 C CNN
+	1    7350 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J6
+U 1 1 5D75DE44
+P 7300 3850
+F 0 "J6" H 7220 3625 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 7220 3716 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 7300 3850 50  0001 C CNN
+F 3 "~" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

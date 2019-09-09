@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>/home/chesito/Documentos/machine/sensor-machine/sensor_machine.sch</h1>
+    <p>mar 03 sep 2019 21:47:03 -05</p>
+    <p>Eeschema 5.0.2-bee76a0~70~ubuntu16.04.1</p>
+    <p><b>Component Count:</b>22</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1, C2</td><td>2</td><td>0.1uf</td><td>Device:CP1</td><td>~</td><td>Polarized capacitor, US symbol</td><td></td></tr><tr><td>C4</td><td>1</td><td>1uf</td><td>Device:CP1</td><td>~</td><td>Polarized capacitor, US symbol</td><td></td></tr><tr><td>D1, D3, D4</td><td>3</td><td>1N4001</td><td>Diode:1N4001</td><td>http://www.vishay.com/docs/88503/1n4001.pdf</td><td>50V 1A General Purpose Rectifier Diode, DO-41</td><td></td></tr><tr><td>D2</td><td>1</td><td>LED</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>J1</td><td>1</td><td>Barrel_Jack</td><td>Connector:Barrel_Jack_Switch</td><td>~</td><td>DC Barrel Jack with an internal switch</td><td></td></tr><tr><td>J2</td><td>1</td><td>Barrel_Jack_Switch</td><td>Connector:Barrel_Jack</td><td>~</td><td>DC Barrel Jack</td><td></td></tr><tr><td>J3, J4, J5, J7, J8, J11</td><td>6</td><td>Screw_Terminal_01x02</td><td>Connector:Screw_Terminal_01x02</td><td>~</td><td>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>R1</td><td>1</td><td>240</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R2</td><td>1</td><td>120</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R3</td><td>1</td><td>910k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R4</td><td>1</td><td>5.1k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R5</td><td>1</td><td>100k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>U1</td><td>1</td><td>ard_UNO</td><td>arduino_UNO:ard_UNO</td><td></td><td></td><td></td></tr><tr><td>U2</td><td>1</td><td>LM317_3PinPackage</td><td>Regulator_Linear:LM317_3PinPackage</td><td>http://www.ti.com/lit/ds/symlink/lm317.pdf</td><td>1A 35V Adjustable Linear Regulator, SOT-89/SOT-223/TO-220/TO-252/TO-263</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
