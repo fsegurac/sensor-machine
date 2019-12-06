@@ -187,7 +187,7 @@ Connection ~ 4300 3200
 Wire Wire Line
 	5400 3600 5400 3550
 Wire Wire Line
-	3050 2750 3500 2750
+	3050 2750 3250 2750
 $Comp
 L Diode:1N4001 D1
 U 1 1 5D4C1AF2
@@ -342,8 +342,6 @@ Wire Wire Line
 Text Label 6050 5050 0    50   ~ 0
 A3
 Wire Wire Line
-	7650 3850 7500 3850
-Wire Wire Line
 	7650 3650 7500 3650
 Text Label 7500 3650 2    50   ~ 0
 A3
@@ -364,30 +362,6 @@ F 1 "Screw_Terminal_01x02" H 5680 2201 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5600 2300 50  0001 C CNN
 F 3 "~" H 5600 2300 50  0001 C CNN
 	1    5600 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5D6D470C
-P 7700 4800
-F 0 "#PWR0105" H 7700 4550 50  0001 C CNN
-F 1 "GND" H 7705 4627 50  0000 C CNN
-F 2 "" H 7700 4800 50  0001 C CNN
-F 3 "" H 7700 4800 50  0001 C CNN
-	1    7700 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 4700 7550 4700
-$Comp
-L Connector:Screw_Terminal_01x02 J7
-U 1 1 5D6D4713
-P 7900 4700
-F 0 "J7" H 7980 4692 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7980 4601 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 7900 4700 50  0001 C CNN
-F 3 "~" H 7900 4700 50  0001 C CNN
-	1    7900 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -531,7 +505,7 @@ U 1 1 5D6D4F45
 P 8100 2500
 F 0 "U1" H 8100 3175 50  0000 C CNN
 F 1 "ard_UNO" H 8100 3084 50  0000 C CNN
-F 2 "ard_UNO:arduino_UNO" H 8150 2500 50  0001 C CNN
+F 2 "ard_UNO:Arduino_UNO_R3_WithMountingHoles_handsoldering" H 8150 2500 50  0001 C CNN
 F 3 "" H 8150 2500 50  0001 C CNN
 	1    8100 2500
 	1    0    0    -1  
@@ -603,26 +577,72 @@ F 3 "" H 5400 3200 50  0001 C CNN
 	1    5400 3200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3250 2750 3250 2950
+Wire Wire Line
+	3250 2950 3350 2950
+Connection ~ 3250 2750
+Wire Wire Line
+	3250 2750 3500 2750
+Text Label 3350 2950 0    50   ~ 0
+Vin
+Text Label 5600 4550 0    50   ~ 0
+Vin
+Wire Wire Line
+	5600 4550 5300 4550
+Connection ~ 5300 4550
+Text Label 7550 4600 0    50   ~ 0
+A5'
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5DEB5F66
+P 7900 4600
+F 0 "J6" H 7980 4592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7980 4501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 7900 4600 50  0001 C CNN
+F 3 "~" H 7900 4600 50  0001 C CNN
+	1    7900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4600 7550 4600
+Wire Wire Line
+	7700 4700 7700 4750
+$Comp
+L power:GND #PWR0105
+U 1 1 5DEB5F6F
+P 7700 4750
+F 0 "#PWR0105" H 7700 4500 50  0001 C CNN
+F 1 "GND" H 7705 4577 50  0000 C CNN
+F 2 "" H 7700 4750 50  0001 C CNN
+F 3 "" H 7700 4750 50  0001 C CNN
+	1    7700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3850 7500 3850
+Text Label 7500 3850 0    50   ~ 0
+A5
 $Comp
 L Connector:Screw_Terminal_01x01 J9
-U 1 1 5D75DCB4
-P 7350 4700
-F 0 "J9" H 7270 4475 50  0000 C CNN
-F 1 "Screw_Terminal_01x01" H 7270 4566 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 7350 4700 50  0001 C CNN
-F 3 "~" H 7350 4700 50  0001 C CNN
-	1    7350 4700
+U 1 1 5DEBA7A8
+P 7350 4600
+F 0 "J9" H 7270 4375 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 7270 4466 50  0000 C CNN
+F 2 "Connectors:Pin_d1.0mm_L10.0mm" H 7350 4600 50  0001 C CNN
+F 3 "~" H 7350 4600 50  0001 C CNN
+	1    7350 4600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x01 J6
-U 1 1 5D75DE44
+L Connector:Screw_Terminal_01x01 J7
+U 1 1 5DEBA869
 P 7300 3850
-F 0 "J6" H 7220 3625 50  0000 C CNN
-F 1 "Screw_Terminal_01x01" H 7220 3716 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 7300 3850 50  0001 C CNN
+F 0 "J7" H 7300 3650 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 7300 3750 50  0000 C CNN
+F 2 "Connectors:Pin_d1.0mm_L10.0mm" H 7300 3850 50  0001 R CNN
 F 3 "~" H 7300 3850 50  0001 C CNN
 	1    7300 3850
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
